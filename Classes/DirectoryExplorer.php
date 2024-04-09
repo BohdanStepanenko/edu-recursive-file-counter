@@ -10,7 +10,7 @@ class DirectoryExplorer
         private FileCounterInterface $fileCounter
     ) {}
 
-    public function traverseDirectory(string $directory): void
+    public function exploreDirectory(string $directory): void
     {
         $fileCounts = $this->fileCounter->countFiles($directory);
 
